@@ -42,5 +42,5 @@ We welcome contributions from the Zeal Micro Mac community.
 
 ## Contact
 
-For any inquiries, please contact Zeal Micro Mac at [www.zealmicromac.in].
+For any inquiries, please email us at [chinchghareir@rknec.edu,hussainms@rknec.edu].
 
