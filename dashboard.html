@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+   
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="css/style.css">
+   
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   </head>
+<body>
+
+    <header class="header">
+   
+        <section class="flex">
+     
+           <a href="home.html" class="logo"><h2>LMS</h2></a>
+     
+           <form action="search.html" method="post" class="search-form">
+              <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+     
+           <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+              <div id="user-btn" class="fas fa-user"></div>
+              <div id="toggle-btn" class="fas fa-sun"></div>
+           </div>
+     
+           <div class="profile">
+              <img src="images/pic-1.jpg" class="image" alt="">
+              <h3 class="name">Learner 1</h3>
+              <p class="role">student</p>
+              <a href="profile.html" class="btn">view profile</a>
+              <div class="flex-btn">
+                 <a href="login.html" class="option-btn">login</a>
+                 <a href="register.html" class="option-btn">register</a>
+              </div>
+           </div>
+     
+        </section>
+     
+     </header>  
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Learner 1</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+   
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <a href="about.html"><i class="fas fa-handshake"></i><span>About</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Learning</span></a>
+         <a href="quiz.html"><i class="fas fa-puzzle-piece"></i><span>  Quizes</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Our Team</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+         <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+     </nav>
+   </div>
+
+   <main>
+      <section class="about">
+  
+          <div class="row">
+  
+             
+  
+              <div class="content">
+                  <h3>Dashboard</h3>
+                  <p>The Learning management system allows users to learn from a set of modules and track their progress.</p>
+                  
+              </div>
+  
+          </div>
+  
+          <div class="box-container">
+              <div class="box">
+                  <div class="progress-bar-container">
+                      <div class="progress-bar">
+                          <div class="progress" style="width: 40%;"></div>
+                      </div>
+                      <p class="progress-label">Course Progress</p>
+                  </div>
+                  <h2>Almost Half Done!</h2>
+                  
+              </div>
+              
+              <div class="box">           
+                <div class="checklist-container">
+                <h3>My Checklist</h3>
+                <ul class="checklist">
+                    <li>
+                        <input type="checkbox" id="task1">
+                        <label for="task1">Task 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Task 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Task 3</label>
+                    </li>
+                    <!-- Add more tasks as needed -->
+                </ul>
+            </div></div>
+  
+              <div class="box">
+                  <!-- Set a fixed size for the timeSpentChart -->
+                  <canvas id="timeSpentChart" width="400" height="400"></canvas>
+              </div>
+  
+              <div class="box">
+                  <!-- Set a fixed size for the performanceChart -->
+                  <canvas id="performanceChart" width="400" height="400"></canvas>
+              </div>
+           
+              <div class="box">
+          <div class="checklist-container">
+            <h3>My Checklist</h3>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Task 1</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Task 2</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Task 3</label>
+                </li>
+                <!-- Add more tasks as needed -->
+            </ul>
+        </div>
+        </div>
+
+        <!-- Progress Bars -->
+        <div class="box">
+        <div class="progress-container">
+            <h3>Task Progress</h3>
+            <div class="progress-bar">
+                <div id="progress-task1" class="progress-bar-fill"></div>
+            </div>
+            <p class="progress-label">Task 1</p>
+
+            <div class="progress-bar">
+                <div id="progress-task2" class="progress-bar-fill"></div>
+            </div>
+            <p class="progress-label">Task 2</p>
+
+            <div class="progress-bar">
+                <div id="progress-task3" class="progress-bar-fill"></div>
+            </div>
+            <p class="progress-label">Task 3</p>
+
+            <!-- Add more progress bars for additional tasks -->
+        </div>
+    </div>
+
+          </div>
+
+         
+          
+  
+      </section>
+      <section class="horizontal-section">
+        <div class="box">
+            <!-- Highlighted: Placeholder button for generating a report -->
+            <button id="generate-report-btn" class="btn">Generate Report</button>
+        </div>
+    </section>
+  </main>
+  
+
+  
+  <footer class="footer">
+      <span>LMS</span> | all rights reserved
+  </footer>
+  
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var ctx = document.getElementById('performanceChart').getContext('2d');
+          var performanceChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: ['January', 'February', 'March', 'April', 'May'],
+                  datasets: [{
+                      label: 'Performance Assessment',
+                      data: [65, 75, 80, 85, 70], // Placeholder data, replace with actual data
+                      borderColor: '#3498db',
+                      borderWidth: 2,
+                      fill: false
+                  }]
+              },
+              options: {
+                  scales: {
+                      y: {
+                          beginAtZero: true,
+                          max: 100
+                      }
+                  }
+              }
+          });
+      });
+  
+      document.addEventListener('DOMContentLoaded', function () {
+          var ctx = document.getElementById('timeSpentChart').getContext('2d');
+          var timeSpentChart = new Chart(ctx, {
+              type: 'pie',
+              data: {
+                  labels: ['Module 1',  'Module 2', 'Module 3', 'Module 4'],
+                  datasets: [{
+                      data: [5,  6, 2.5, 7.5], // Placeholder data, replace with actual data
+                      backgroundColor: ['#e74c3c', '#f39c12', '#3498db', '#9b59b6']
+                  }]
+              }
+          });
+      });
+  </script>
+
+  
+</body>
+</html>

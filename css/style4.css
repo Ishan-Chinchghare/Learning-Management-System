@@ -1,0 +1,31 @@
+/* Add the following styles to your existing CSS file or create a new one */
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    min-width: calc(25% - 20px); /* Adjust the width based on your preference */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Set your desired background color */
+    border: 1px solid #ddd; /* Add border for better visibility */
+    border-radius: 5px; /* Add rounded corners if desired */
+    overflow: hidden;
+}
+
+/* Add styles for the progress bars or other specific elements within the boxes */
+.progress-bar-container, .checklist-container {
+    /* Add styles as needed */
+}
+
+/* Add media query for responsiveness if needed */
+@media (max-width: 768px) {
+    .box {
+        min-width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
