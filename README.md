@@ -34,11 +34,7 @@ Welcome to the Zeal Micro Mac Learning Management System (LMS). This open-source
 
 ## Contributing
 
-We welcome contributions from the Zeal Micro Mac community. If you would like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+We welcome contributions from the Zeal Micro Mac community.
 
 ## Acknowledgments
 
@@ -46,5 +42,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, please contact Zeal Micro Mac at [contact@zealmicromac.com].
+For any inquiries, please contact Zeal Micro Mac at [www.zealmicromac.in].
 
